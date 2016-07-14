@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <title>BattleField</title>
+        <style>
+                form{
+                    width: 500px;
+                    text-align: justify;
+                    align: top;
+                }
+                input[type='text']{
+                    margin-bottom: 20px;
+                    padding: 5px 10px
+
+                }
+                #start{
+                    align: center;
+                    width: 358px;
+                    height: 35px;
+                }
+
+        </style>
+    </head>
+    <body>
+        <form method="POST" action="/form">
+            <h2>BattleField</h2>
+
+
+            <p>The total number of soldiers and vehicles (from 5 to 10): </p>
+            <input type="text" name="soldiers" id="soldiers" placeholder="Soldiers" required="">
+            <input type="text" name="vehicles" id="vehicles" placeholder="Vehicles" required="">
+
+            <br>
+
+            <label for="squads_number">The number of squad in the army(&gt;=2): </label>
+            <br><br>
+            <input  type="text" name="squads_number" id="squads_number" required="" style="width: 331px">
+            <br>
+            <label for="armies_number">The number of Army (&gt;=2): </label>
+            <input type="text" name="armies_number" id="armies_number" required="">
+            <br>
+            <label for="strategy">Strategy (random|weakest|strongest): </label>
+            <br><br>
+            <input type="text" name="strategy" id="strategy" required="" style="width: 331px">
+            <br>
+
+            <input type="submit" value="Старт" name="start" id="start">
+        </form>
+    </body>
+</html>
